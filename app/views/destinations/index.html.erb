@@ -1,1 +1,6 @@
-Destination index
+<%= @destinations.each do |destination| %>
+  <%= destination.title %>
+  <%= destination.body %>
+  <%= destination.image %>
+<% end %>
+
