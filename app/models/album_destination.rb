@@ -1,0 +1,2 @@
+class AlbumDestination < ApplicationRecord
+end
