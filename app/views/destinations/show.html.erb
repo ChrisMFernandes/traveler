@@ -1,4 +1,14 @@
-<p><%= @destination.title %></p>
-<p><%= @destination.body %></p>
+<div>
+  <p><%= @destination.title %></p>
+  <p><%= @destination.body %></p>
+</div>
 
-<%= image_tag(@destination.image) if @destination.image.attached? %>
+<div>
+  <% if @destination.images.attached? %>
+    <% @destination.images.each do |destination| %>
+      <%= image_tag(destination) %>
+    <% end %>
+  <% else %>
+    <p> No Pictures </p>
+  <% end %>
+</div>

@@ -25,7 +25,7 @@ class DestinationsController < ApplicationController
   private
 
   def destination_params
-    params.require(:destination).permit(:title, :body, :image)
+    params.require(:destination).permit(:title, :body, images: [])
   end
 
 end
