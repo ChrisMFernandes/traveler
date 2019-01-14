@@ -1,6 +1,10 @@
-<%= @destinations.each do |destination| %>
-  <%= destination.title %>
-  <%= destination.body %>
-  <%= destination.image %>
+<% @destinations.each do |destination| %>
+  <p>
+    <%= destination.title %>
+  </p>
+  <p>
+    <%= destination.body %>
+    <%= link_to 'Show', destination_path(destination) %>
+  </p>
 <% end %>
 

@@ -10,9 +10,10 @@ class AlbumsController < ApplicationController
 
   def create
     @album = Album.create(album_params)
+    @destination = Destination.find(params[:destination_id])
 
     if @album.save
-      redirect_to @album
+      redirect_to destination_album_path(@destination, @album.id)
     else
       render 'new'
     end

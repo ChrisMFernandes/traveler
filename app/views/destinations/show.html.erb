@@ -1,6 +1,16 @@
 <div>
   <p><%= @destination.title %></p>
   <p><%= @destination.body %></p>
+  
+    <% @destination.albums.each do |album| %>
+      <% if album.images.attached? %>
+        <% album.images.each do |image| %>
+          <%= image_tag(image) %>
+        <% end %>
+      <% else %>
+        <p>No Images</p>
+      <% end %>
+    <% end %>
 </div>
 
 <%= link_to 'New Album', new_destination_album_path(@destination) %>

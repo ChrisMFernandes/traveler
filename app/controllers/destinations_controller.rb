@@ -10,6 +10,7 @@ class DestinationsController < ApplicationController
 
   def create
     @destination = Destination.create(destination_params)
+    @destination.user_id = current_user.id
     
     if @destination.save
       redirect_to @destination
@@ -27,7 +28,7 @@ class DestinationsController < ApplicationController
   private
 
   def destination_params
-    params.require(:destination).permit(:title, :body)
+    params.require(:destination).permit(:title, :body, :user_id)
   end
 
 end
