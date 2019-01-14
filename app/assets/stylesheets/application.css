@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.btn-primary {
+  text-decoration: none;
+  background-color: red;
+  border-radius: 2px;
+  padding: 2%;
+}
