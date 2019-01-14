@@ -1,5 +1,8 @@
 <h1>Albums#new</h1>
 
+<%# use for testing only %>
+<%= "editing #{@destination.title}!" %>
+
 <%= form_for [@destination, @album] do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>

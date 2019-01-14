@@ -4,13 +4,15 @@ class AlbumsController < ApplicationController
   end
 
   def new
-    @destination = Destination.find_by(params[:id])
+    @destination = Destination.find(params[:destination_id])
     @album = Album.new
   end
 
   def create
     @album = Album.create(album_params)
     @destination = Destination.find(params[:destination_id])
+    
+    AlbumDestination.create(album_id: @album.id, destination_id: @destination)
 
     if @album.save
       redirect_to destination_album_path(@destination, @album.id)
@@ -25,6 +27,7 @@ class AlbumsController < ApplicationController
 
   def show
     @album = Album.find(params[:id])
+    @destination = Destination.find(params[:destination_id])
   end
 
   def delete
