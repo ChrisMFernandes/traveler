@@ -13,6 +13,8 @@ class DestinationsController < ApplicationController
     
     if @destination.save
       redirect_to @destination
+    else
+      render 'new'
     end
 
   end
@@ -25,7 +27,7 @@ class DestinationsController < ApplicationController
   private
 
   def destination_params
-    params.require(:destination).permit(:title, :body, images: [])
+    params.require(:destination).permit(:title, :body)
   end
 
 end

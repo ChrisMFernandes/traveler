@@ -3,12 +3,4 @@
   <p><%= @destination.body %></p>
 </div>
 
-<div>
-  <% if @destination.images.attached? %>
-    <% @destination.images.each do |destination| %>
-      <%= image_tag(destination) %>
-    <% end %>
-  <% else %>
-    <p> No Pictures </p>
-  <% end %>
-</div>
+<%= link_to 'New Album', new_destination_album_path(@destination) %>
