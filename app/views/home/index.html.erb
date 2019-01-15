@@ -1,20 +1,23 @@
-<head>
-  <title>Traveler</title>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Traveler</title>
+    <%= favicon_link_tag 'traveler.jpeg' %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
-<body>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
 
-  <section class="hero-image">
-    <div class="hero-modal">
-      <h1>Welcome to Traveler</h1><br>
-      <%= link_to 'Sign Up', new_user_registration_path, class: "btn-primary"%><br>
-      <%= link_to 'Sign In', new_user_session_path, class: "btn-primary" %>
-    </div>
-  </section>
+    <section class="hero-image">
+      <div class="hero-modal">
+        <h1>Welcome to Traveler</h1><br>
+        <%= link_to 'Sign Up', new_user_registration_path, class: "btn-primary"%><br>
+        <%= link_to 'Sign In', new_user_session_path, class: "btn-primary" %>
+      </div>
+    </section>
 
-</body>
+  </body>
 </html>
