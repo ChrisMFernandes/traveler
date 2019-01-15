@@ -11,8 +11,14 @@ class AlbumsController < ApplicationController
   def create
     @album = Album.create(album_params)
     @destination = Destination.find(params[:destination_id])
+    @ab = AlbumDestination.create(album_id: @album.id, destination_id: @destination.id)
+
+    puts "====="
+    puts @album.name
+    puts @destination.title
+    puts @ab.inspect
+    puts '====='
     
-    AlbumDestination.create(album_id: @album.id, destination_id: @destination)
 
     if @album.save
       redirect_to destination_album_path(@destination, @album.id)
