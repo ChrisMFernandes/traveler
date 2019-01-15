@@ -20,6 +20,10 @@ class DestinationsController < ApplicationController
 
   end
 
+  def update
+
+  end
+
   def show
     @destination = Destination.find(params[:id])
   end
