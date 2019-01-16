@@ -5,7 +5,7 @@ class HomeController < ApplicationController
   end
 
   def dashboard
-    
+    render layout: false
   end
 
 end
