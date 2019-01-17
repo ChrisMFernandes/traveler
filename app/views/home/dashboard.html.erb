@@ -10,16 +10,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+      
+    <div class="dash-container">
+      <div class="side-nav">
+        <%= render 'layouts/links' %>
+      </div>
 
-    <div class="side-nav">
-      <%= render 'layouts/links' %>
-      <p>this is for testing</p>
+      <section class="dash-section">
+        <h1><%= "Welcome to your dashboard, #{current_user.email}" %></h1>
+      </section>
     </div>
 
-
-    <section class="dash-container">
-      <h1><%= "Welcome to your dashboard, #{current_user.email}" %></h1>
-    </section>
-    
   </body>
 </html>
