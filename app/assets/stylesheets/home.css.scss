@@ -6,13 +6,21 @@
 .hero-image {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(riverdock.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(airplane-wing.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+#welcome-text {
+  color: white;
+  margin-bottom: 3%;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px;
 }
 
 .hero-modal {
@@ -33,7 +41,7 @@
 }
 
 .dash-section {
-  background: url(map.jpg);
+  background: url(beach-van.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
