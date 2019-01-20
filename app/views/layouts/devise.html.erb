@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
   <head>
     <title>Traveler</title>
     <%= favicon_link_tag 'traveler.jpeg' %>
@@ -15,12 +15,19 @@
   </head>
 
   <body>
-
+      
     <%= render 'layouts/links' %>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <section class="devise-hero">
 
-    <%= yield %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <div class="devise-form container small">
+        <%= yield %>
+      </div>
+
+    </section>
+    
   </body>
 </html>
