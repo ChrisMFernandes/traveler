@@ -24,14 +24,42 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: 'Monserrat', sans-serif;
+  color: #FCFCFCe;
+}
+
+/* TODO come back to this */
+
+input {
+  border: .2rem solid #99E1D9 !important;
+  color: #FCFCFC !important;
+}
+
+input[type=submit] {
+  background-color: #99E1D9;
+}
+
+input[type=submit]:hover {
+  background-color: #8CCDC6;
+}
+
+a:link {
+  color: #FFFAE3 !important;
+}
+
+a:link:hover {
+  color: #E8E4CF;
+}
+
+a:link:visited {
+  color: #8CCDC6;
 }
 
 
 .btn-primary {
-  color: white;
+  color: #FCFCFC;
   text-decoration: none;
   background-color: transparent;
-  border: 2px solid orange;
+  border: 2px solid #99E1D9;
   border-radius: 30px;
   padding: 3%;
   margin-bottom: 10px;

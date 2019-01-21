@@ -5,12 +5,15 @@
   background-size: cover;
   background-postition: center;
   bacckground-repeat: no-repeat;
-  color: white;
+  color: #FCFCFC;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .devise-form {
-
+  background: rgba(0,0,0,0.8);
+  border-radius: 8px;
+  color: #FCFCFCe;
+  font-family: 'Open Sans', sans-serif;
 }

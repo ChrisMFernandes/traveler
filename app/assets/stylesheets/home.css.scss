@@ -6,7 +6,7 @@
 .hero-image {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(airplane-wing.jpg);
+  background-image: url(airplane-wing.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 }
 
 #welcome-text {
-  color: white;
+  color: #FCFCFC;
   margin-bottom: 3%;
   font-size: 6rem;
   text-shadow: 3px 3px #000;
@@ -25,10 +25,10 @@
 }
 
 .hero-modal {
-  color: white;
+  color: #FCFCFC;
   height: 300px;
   width: 500px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.8);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@
   max-width: 35%;
   height: 100vh;
   background-color: #000;
-  color: white;
+  color: #FCFCFC;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,12 +63,12 @@
 
 .side-nav, a {
   text-decoration: none;
-  color: white;
+  color: #FCFCFC;
   padding-bottom: 10%;
 }
 
 .links:visited {
-  color: white;
+  color: #FCFCFC;
 }
 
 .side-nav, a:hover {
