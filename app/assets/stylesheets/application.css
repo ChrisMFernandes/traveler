@@ -27,13 +27,6 @@ html, body {
   color: #FCFCFC;
 }
 
-/* TODO come back to this */
-
-/* input {
-  border: .2rem solid #99E1D9 !important;
-  color: #FCFCFC !important;
-} */
-
 input[type=submit] {
   background-color: #99E1D9;
   border: .2rem solid #99E1D9
@@ -45,7 +38,7 @@ input[type=submit]:hover {
 }
 
 a, a:link {
-  color: #FFFAE3;
+  color: #99E1D9;
 }
 
 a:hover, a:link:visited {
@@ -53,17 +46,17 @@ a:hover, a:link:visited {
 }
 
 a:link:hover {
-  color: #E8E4CF;
+  color: #8CCDC6;
 }
 
 /* TODO come back and clean this up */
 
 #test {
-  color: #FFFAE3;
+  color: #99E1D9;
 }
 
 #test:hover {
-  color: #E8E4CF;
+  color: #99E1D9;
 }
 
 .btn-primary {
