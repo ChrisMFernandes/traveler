@@ -41,22 +41,8 @@ a, a:link {
   color: #99E1D9;
 }
 
-a:hover, a:link:visited {
+a:link:hover, a:link:visited  {
   color: #8CCDC6;
-}
-
-a:link:hover {
-  color: #8CCDC6;
-}
-
-/* TODO come back and clean this up */
-
-#test {
-  color: #99E1D9;
-}
-
-#test:hover {
-  color: #99E1D9;
 }
 
 .btn-primary {

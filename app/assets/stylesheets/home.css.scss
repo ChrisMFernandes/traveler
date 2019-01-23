@@ -38,7 +38,11 @@
 }
 
 .dash-container {
-  display: flex;
+  background-image: url(table-map.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+
 }
 
 .dash-section {
@@ -50,13 +54,9 @@
 
 }
 
-.side-nav {
-  max-width: 35%;
-  height: 100vh;
-  background-color: #000;
-  color: #FCFCFC;
+.dash-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3%;
+  justify-content: space-around;
 }
+
+
