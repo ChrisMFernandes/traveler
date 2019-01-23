@@ -10,6 +10,11 @@ input[type=submit]:hover {
   border: .2rem solid #8CCDC6;
 }
 
+input[type=submit]:focus {
+  background-color: #8CCDC6;
+  border: .2rem solid #8CCDC6;
+}
+
 input[type=file] {
   display: flex;
   height: 5rem;
@@ -53,8 +58,8 @@ a:link:hover, a:link:visited  {
   width: 100%;
   background-image: url('beach-van.jpg');
   background-size: cover;
-  background-postition: center;
-  bacckground-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #FCFCFC;
   display: flex;
   justify-content: center;
@@ -68,4 +73,12 @@ a:link:hover, a:link:visited  {
   font-family: 'Open Sans', sans-serif;
   padding-top: 1%;
   padding-bottom: 1%;
+}
+
+.notice {
+  color: #99E1D9;
+}
+
+.alert {
+  color: #F7567C;
 }

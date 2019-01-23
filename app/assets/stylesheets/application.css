@@ -27,24 +27,6 @@ html, body {
   color: #FCFCFC;
 }
 
-input[type=submit] {
-  background-color: #99E1D9;
-  border: .2rem solid #99E1D9
-}
-
-input[type=submit]:hover {
-  background-color: #8CCDC6;
-  border: .2rem solid #8CCDC6;
-}
-
-a, a:link {
-  color: #99E1D9;
-}
-
-a:link:hover, a:link:visited  {
-  color: #8CCDC6;
-}
-
 .btn-primary {
   color: #FCFCFC;
   text-decoration: none;
