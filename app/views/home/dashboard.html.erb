@@ -9,7 +9,7 @@
     <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro' %>
     <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Montserrat' %>
     <%= stylesheet_link_tag 'https://unpkg.com/lemoncss/dist/lemon.min.css', 'data-turbolinks-track': 'false' %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'true' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
@@ -17,11 +17,29 @@
         <nav class="dash-nav">
           <%= render 'layouts/links' %>
         </nav>
-      <section>
+      </section>
 
-      
+      <section class="dash-content">
         <h1><%= "Welcome to your dashboard, #{current_user.email}" %></h1>
+        <h3>Where would you like to begin your journey?</h3>
+      </section>
 
+      <footer class="dash-footer">
+        
+        <ul class="dash-footer-links">
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+          <li>Link 4</li>
+        </ul>
+
+        <ul class="dash-footer-social">
+          <li>BookFace</li>
+          <li>Tweeter</li>
+          <li>SnapCrap</li>
+        </ul>
+
+      </footer>
 
   </body>
 </html>

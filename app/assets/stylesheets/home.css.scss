@@ -42,7 +42,7 @@
   background-size: cover;
   background-position: center;
   height: 80vh;
-
+  box-shadow: 5px 0 5px #000;
 }
 
 .dash-section {
@@ -57,6 +57,38 @@
 .dash-nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  font-weight: 400;
+  height: 40px;
 }
+
+.dash-nav a {
+  color: #99E1D9;
+}
+
+.dash-nav a:hover {
+  color: #8CCDC6;
+  border-bottom: 2px solid #8CCDC6;
+}
+
+.dash-content {
+  color: #44404E;
+  background-color: #FFFAE3;
+  height: 400px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dash-footer {
+  background-color: #44404E;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+}
+
 
 
