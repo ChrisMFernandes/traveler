@@ -1,3 +1,31 @@
 // Place all the styles related to the Destinations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.new-dest-container {
+  background: url(map.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dest-form-container {
+  background: rgba(0,0,0,0.8);
+  border-radius: 8px;
+  color: #FCFCFC;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.dest-form-container textarea {
+  border: .1rem solid #99E1D9;
+  color: #FCFCFC;
+}
+
+.dest-form-container textarea:focus {
+  border: .2rem solid #8CCDC6;
+}
