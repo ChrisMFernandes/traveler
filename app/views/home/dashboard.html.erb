@@ -13,15 +13,28 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+      
       <section class="dash-container">
         <nav class="dash-nav">
           <%= render 'layouts/links' %>
         </nav>
       </section>
-
+      
       <section class="dash-content">
         <h1><%= "Welcome to your dashboard, #{current_user.email}" %></h1>
         <h3>Where would you like to begin your journey?</h3>
+
+        <div class="journey-tiles">
+            <%= link_to new_destination_path do %>
+              <div class="tile">This div is clickable</div>
+            <% end %>
+            <%= link_to new_destination_path do %>
+              <div class="tile">This div is clickable</div>
+            <% end %>
+            <%= link_to new_destination_path do %>
+              <div class="tile">This div is clickable</div>
+            <% end %>
+        </div>
       </section>
 
       <footer class="dash-footer">
