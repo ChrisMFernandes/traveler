@@ -1,10 +1,18 @@
-<% @destinations.each do |destination| %>
-  <p>
-    <%= destination.title %>
-  </p>
-  <p>
-    <%= destination.body %>
-    <%= link_to 'Show', destination_path(destination) %>
-  </p>
-<% end %>
+<section class="dest-hero"></section>
+
+<section class="dest-index-container">
+  
+  <% @destinations.each do |destination| %>
+    <div class="dest-info">
+        <p>
+          <%= destination.title %>
+        </p>
+        <p>
+          <%= destination.body %>
+          <%= link_to 'Show', destination_path(destination) %>
+        </p>
+    </div>
+  <% end %>
+
+</section>
 
