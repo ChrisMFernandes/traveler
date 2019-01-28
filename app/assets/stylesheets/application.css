@@ -27,6 +27,10 @@ html, body {
   color: #FCFCFC;
 }
 
+hr {
+  border-top: .1rem solid #99E1D9;
+}
+
 .notice, .alert {
   margin: 0;
 }

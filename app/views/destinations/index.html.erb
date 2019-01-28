@@ -4,13 +4,17 @@
   
   <% @destinations.each do |destination| %>
     <div class="dest-info container medium">
-        <p>
+        
+        <h2>
           <%= destination.title %>
-        </p>
+        </h2><hr>
+        
         <p>
           <%= destination.body %>
-          <%= link_to 'Show', destination_path(destination) %>
         </p>
+          
+        <%= link_to 'Show', destination_path(destination) %>
+    
     </div>
   <% end %>
 
