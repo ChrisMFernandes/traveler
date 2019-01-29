@@ -65,3 +65,26 @@
 .dest-form-container textarea:focus {
   border: .2rem solid #8CCDC6;
 }
+
+.dest-show-hero {
+  background-image: url(beach.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dest-show-container {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.dest-show-content {
+  background: rgba(0,0,0,0.8);
+  border-radius: 8px;
+  color: #FCFCFC;
+  font-family: 'Open Sans', sans-serif;
+  height: 40%;
+}

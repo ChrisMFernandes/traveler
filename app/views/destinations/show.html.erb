@@ -1,16 +1,20 @@
-<div>
-  <p><%= @destination.title %></p>
-  <p><%= @destination.body %></p>
-  
+<section class="dest-show-hero">
+
+  <div class="dest-show-content container medium">
+    <p><%= @destination.title %></p>
+    <p><%= @destination.body %></p>
+    
     <% @destination.albums.each do |album| %>
       <% if album.images.attached? %>
         <% album.images.each do |image| %>
-          <%= image_tag(image, size: 400) %>
+          <%= image_tag(image, size: 100) %>
         <% end %>
       <% else %>
         <p><%= "There aren't any images in #{album.name}" %></p>
       <% end %>
     <% end %>
-</div>
 
-<%= link_to 'New Album', new_destination_album_path(@destination) %>
+    <%= link_to 'New Album', new_destination_album_path(@destination) %>
+  </div>
+
+</section>
