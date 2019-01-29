@@ -6,7 +6,9 @@
   background-image: url(riverdock.jpg);
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  background-attachment: fixed;
+  height: 80%;
+  width: auto;
 }
 
 .dest-index-container {
@@ -40,7 +42,7 @@
   background-image: url(map.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
