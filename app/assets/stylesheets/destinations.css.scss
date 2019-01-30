@@ -86,5 +86,9 @@
   border-radius: 8px;
   color: #FCFCFC;
   font-family: 'Open Sans', sans-serif;
-  height: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
