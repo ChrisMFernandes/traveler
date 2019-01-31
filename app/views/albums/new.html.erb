@@ -1,12 +1,17 @@
-<%# use for testing only %>
-<h1><%= "Add a photo album for #{@destination.title}!" %></h1>
+<section class="new-album-hero">
 
-<%= form_for [@destination, @album] do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :date %>
-  <%= f.date_field :date %>
-  <%= f.label :images %>
-  <%= f.file_field :images, multiple: true %>
-  <%= f.submit %>
-<% end %>
+  <%# use for testing only %>
+  <h1><%= "Add a photo album for #{@destination.title}!" %></h1>
+
+  <div class="new-album-form container medium">
+    <%= form_for [@destination, @album] do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      <%= f.label :date %>
+      <%= f.date_field :date %>
+      <%= f.label :images %>
+      <%= f.file_field :images, multiple: true %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</section>
