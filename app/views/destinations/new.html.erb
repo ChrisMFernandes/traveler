@@ -1,12 +1,12 @@
 <div class="new-dest-container">
   <section class="dest-form-container container medium">
     <h1>Where did you travel to?</h1>
-      <%= form_for @destination do |f| %>
-        <%= f.label :title %>
-        <%= f.text_field :title %>
-        <%= f.label :body %>
-        <%= f.text_area :body %>
-        <%= f.submit %>
-      <% end %>
+    <%= form_for @destination do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.label :body %>
+      <%= f.text_area :body %>
+      <%= f.submit %>
+    <% end %>
   </section>
 </div>
