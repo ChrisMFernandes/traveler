@@ -25,3 +25,23 @@
   padding-top: 2%;
   padding-bottom: 2%;
 }
+
+.album-show-container {
+  background-image: url(valley.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.album-container {
+  color: #FCFCFC;
+  background: rgba(0,0,0,0.8);
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}

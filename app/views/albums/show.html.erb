@@ -1,14 +1,17 @@
-<h1><%= @destination.title %></h1>
+<section class="album-show-container">
 
+  <div class="album-container container medium">
+  
+    <h1><%= @destination.title %></h1>
 
-<h1><%= @album.name %></h1>
+    <h1><%= @album.name %></h1>
 
-<div>
-  <% if @album.images.attached? %>
-    <% @album.images.each do |album| %>
-      <%= image_tag(album) %>
+    <% if @album.images.attached? %>
+      <% @album.images.each do |album| %>
+        <%= image_tag(album, size: 200) %>
+      <% end %>
+    <% else %>
+      <p> No Pictures </p>
     <% end %>
-  <% else %>
-    <p> No Pictures </p>
-  <% end %>
-</div>
+  </div>
+</section>
