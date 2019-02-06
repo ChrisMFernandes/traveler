@@ -1,18 +1,23 @@
 <section class="dest-show-hero">
 
   <div class="dest-show-content container medium">
-    <p><%= @destination.title %></p>
-    <p><%= @destination.body %></p>
     
-    <% @destination.albums.each do |album| %>
-      <% if album.images.attached? %>
-        <% album.images.each do |image| %>
-          <%= image_tag(image, size: 200) %>
+    <div class="wrapper">
+      <h1><%= @destination.title %></h1>
+      <h1><%= @destination.body %></h1>
+    </div>
+    
+    <div class="wrapper">
+      <% @destination.albums.each do |album| %>
+        <% if album.images.attached? %>
+          <% album.images.each do |image| %>
+            <%= image_tag(image, size: 200) %>
+          <% end %>
+        <% else %>
+          <p><%= "There aren't any images in #{album.name}" %></p>
         <% end %>
-      <% else %>
-        <p><%= "There aren't any images in #{album.name}" %></p>
       <% end %>
-    <% end %>
+    </div>
 
     <%= link_to 'New Album', new_destination_album_path(@destination) %>
   </div>
