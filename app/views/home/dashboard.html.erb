@@ -27,7 +27,7 @@
           <div class="journey-tiles">
             <% @destinations.each do |dest| %>
               <%= link_to destination_path(dest.id) do %>
-                <div class="tile"><%= image_tag(@image, size: 200) %></div>
+                <div class="tile"><%= image_tag(random_image(dest), size: 200)  %></div>
               <% end %>
             <% end %>
           </div>
